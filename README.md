@@ -32,13 +32,14 @@ Credit: [Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/core/
         sc.exe description ".NET Joke Service" "Note Something"
         ```
 
-5. For web applications or API please add Krestel config in appsetting.json
+5. For web applications or APIs, add Kestrel configuration in `appsettings.json`:
+
     ```json
-   "Kestrel": {
- "Endpoints": {
- "MyHttpEndpoint": {
- "Url": "http://*:1240"
- }
- }
- },
-```
+    "Kestrel": {
+        "Endpoints": {
+            "MyHttpEndpoint": {
+                "Url": "http://*:1240"
+            }
+        }
+    }
+    ```
