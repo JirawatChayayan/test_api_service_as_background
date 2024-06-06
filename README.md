@@ -19,18 +19,18 @@ Credit: [Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/core/
     });
     ```
 
-3. In publish function setup following this image
-        ![image](https://github.com/JirawatChayayan/test_api_service_as_background/assets/51415869/9a6d4021-8ebd-4aa9-bd40-c053830a250b)
+3. In the publish function setup, follow the configuration shown in this image:
+    
+    ![image](https://github.com/JirawatChayayan/test_api_service_as_background/assets/51415869/9a6d4021-8ebd-4aa9-bd40-c053830a250b)
 
-
-4. After published pls following below command for install service
-        ```sh
-        sc.exe create ".NET Joke Service" binpath= "C:\Path\To\App.WindowsService.exe"
-        ```
-        Optional for add the description 
-        ```sh
-        sc.exe description ".NET Joke Service" "Note Something"
-        ```
+4. After publishing, install the service using the following command:
+    ```sh
+    sc.exe create ".NET Joke Service" binpath= "C:\Path\To\App.WindowsService.exe"
+    ```
+    Optionally, add a description:
+    ```sh
+    sc.exe description ".NET Joke Service" "Note Something"
+    ```
 
 5. For web applications or APIs, add Kestrel configuration in `appsettings.json`:
 
