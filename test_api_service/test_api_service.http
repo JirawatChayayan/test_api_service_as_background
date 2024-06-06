@@ -1,0 +1,10 @@
+@test_api_service_HostAddress = http://localhost:8889
+
+GET {{test_api_service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{test_api_service_HostAddress}}/api/Halcon
+Accept: application/json
+###
