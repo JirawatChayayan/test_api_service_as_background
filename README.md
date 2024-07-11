@@ -43,3 +43,8 @@ Credit: [Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/core/
         }
     }
     ```
+
+6. For remove service
+    ```sh
+    sc.exe delete ".NET Joke Service" 
+    ```
